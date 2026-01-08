@@ -1,8 +1,8 @@
-class Car {
-    color='red';
-    model='2020';
-    engine='V6';
-    topSpeed=200;
+class Car{
+    constructoR(brand,model){
+        this.brand = brand;
+        this.model = model;
+    }
 }
 
 
