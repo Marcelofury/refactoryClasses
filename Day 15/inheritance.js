@@ -34,7 +34,7 @@ class KGLCreditSale extends KGLProcurement {
         let daysDue = timeDifference /1000/60/60/24;
         return Math.ceil(daysDue);
 
-}
+} 
     }
 }
 
@@ -47,4 +47,6 @@ console.log(saleProcurement.getDetails());
 let creditSale = new KGLCreditSale("Coffee", 1500, 3000, "2024-06-20", "USD", true, "2024-07-20");
 console.log(creditSale.getDetails()); 
 // Output: Produce: Coffee, Tonnage(kg): 1500, Total Cost: 3000 USD, Sales Date: 2024-06-20 
+
+console.log("Days until due date: " + creditSale.calculateDueDateInDays());
 
