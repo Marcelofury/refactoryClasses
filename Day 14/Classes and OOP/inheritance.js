@@ -21,11 +21,27 @@ class KGLCreditSale extends KGLProcurement {
         this.dueDate = dueDate;
 
     }
+
+
+    calculateDueDateInDays(){
+        let currentDate = new Date()
+        let currentTimeStamp = currentDate.getTime();
+        let timeDifference = new Date(this.dueDate) - currentDate.getTime();
+        if (cuurentTimeStamp > dueDateTimeStamp){
+        
+            return 0; //due date has passed}
+
+        let daysDue = timeDifference /1000/60/60/24;
+        return Math.ceil(daysDue);
+
+}
+    }
 }
 
 
-let sakeProcurement = new KGLProcurement("Sake", 2000, 5000, "2024-06-15", "USD");
-console.log(sakeProcurement.getDetails()); 
+
+let saleProcurement = new KGLProcurement("Sake", 2000, 5000, "2024-06-15", "USD");
+console.log(saleProcurement.getDetails()); 
 // Output: Produce: Sake, Tonnage(kg): 2000, Total Cost: 5000 USD, Sales Date: 2024-06-15   
 
 let creditSale = new KGLCreditSale("Coffee", 1500, 3000, "2024-06-20", "USD", true, "2024-07-20");
