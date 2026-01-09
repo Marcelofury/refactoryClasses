@@ -9,6 +9,7 @@ class KGLProcurement {
         getDetails(){
             return `Produce: ${this.nameOfProduce}, Tonnage(kg): ${this.tonnageInkgs}, Total Cost: ${this.totalCost} ${this.currency}, Sales Date: ${this.salesDate}`;
         }
+        
     }
 }
 
