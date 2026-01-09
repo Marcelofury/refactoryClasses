@@ -20,7 +20,7 @@ class PerishableItem extends Item{
 
     getPrice(){
         if(this.dayUntilExpiry >= 5){
-            return this.price * 0.05; // 5% discount
+            return this.price *(1/this.dayUntilExpiry) ; // 5% discount
 
         }
         
