@@ -30,3 +30,5 @@ const children = cont.childNodes;
 
 //firstElementChild
 const firstChild = cont.firstElementChild;
+//lastElementChild
+const lastChild = cont.lastElementChild;
