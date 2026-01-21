@@ -28,5 +28,5 @@ const parent = cont.parentNode;
 //childNodes
 const children = cont.childNodes;
 
-//firstChild
-const firstChild = cont.firstChild;
+//firstElementChild
+const firstChild = cont.firstElementChild;
