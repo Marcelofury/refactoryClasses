@@ -15,3 +15,5 @@ const classEl = document.getElementsByClassName("class-name");
 const queryEl = document.querySelector(".class-name");
 const cont = document.querySelector("#total-dislay");
 
+//querySelectorAll example
+const queryAllEl = document.querySelectorAll(".class-name");
