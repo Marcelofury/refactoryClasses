@@ -17,3 +17,10 @@ const cont = document.querySelector("#total-dislay");
 
 //querySelectorAll example
 const queryAllEl = document.querySelectorAll(".class-name");
+
+
+// Manipulating the selected elements
+
+//Navigation
+//parentNode
+const parent = cont.parentNode;
