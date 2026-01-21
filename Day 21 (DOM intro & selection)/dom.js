@@ -24,3 +24,6 @@ const queryAllEl = document.querySelectorAll(".class-name");
 //Navigation
 //parentNode
 const parent = cont.parentNode;
+
+//childNodes
+const children = cont.childNodes;
