@@ -27,3 +27,6 @@ const parent = cont.parentNode;
 
 //childNodes
 const children = cont.childNodes;
+
+//firstChild
+const firstChild = cont.firstChild;
